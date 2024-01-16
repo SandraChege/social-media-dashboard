@@ -112,8 +112,8 @@ body {
   border-radius: 2px;
 }
 .center .three {
-  border-top: 3px solid
-    linear-gradient(90deg, hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  border-top: 3px solid var(--BrightRed);
+  /* background: linear-gradient(90deg, hsl(37, 97%, 70%)5%, hsl(329, 70%, 58%)100%); */
   border-radius: 2px;
 }
 .center .one:last-child {
