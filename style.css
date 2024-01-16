@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -19,191 +18,202 @@ body {
   background-color: var(--Very-Dark-Blue-BG);
   padding: 2rem;
 }
-.top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.top > .left{
-    display: flex;
-    flex-direction: column;
+.top > .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top > .left h1 {
+  color: var(--White-Text);
+}
+.top > .left p {
+  color: var(--DesaturatedBlue-Text);
+}
+.top .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.top .right p {
+  color: var(--DesaturatedBlue-Text);
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.center .one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: var(--DarkDesaturatedBlue-CardBG);
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+.center .one .section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.center .one .section1 p {
+  color: var(--DesaturatedBlue-Text);
+}
+.center .one .section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.center .one .section2 h3 {
+  color: var(--White-Text);
+  font-size: 4rem;
+  font-weight: 700;
+}
+.center .one .section2 p {
+  color: var(--DesaturatedBlue-Text);
+  font-size: 14px;
+}
+.center .one .section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  font-size: 14px;
+  color: var(--LimeGreen);
+}
+.center .one .diff p {
+  color: var(--BrightRed);
+}
+.center .one:first-child {
+  border-top: 3px solid hsl(203, 89%, 53%);
+  border-radius: 2px;
+}
+.center .two {
+  border-top: 3px solid hsl(203, 89%, 53%);
+  border-radius: 2px;
+}
+.center .three {
+  border-top: 3px solid
+    linear-gradient(90deg, hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  border-radius: 2px;
+}
+.center .one:last-child {
+  border-top: 3px solid var(--BrightRed);
+  border-radius: 2px;
+}
+h1 {
+  color: var(--White-Text);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.bottom .b1,
+.bottom .b2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.bottom .b1 .one,
+.bottom .b2 .one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: var(--DarkDesaturatedBlue-CardBG);
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+.bottom .b1 .one .up,
+.bottom .b2 .one .up {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+.bottom .b1 .one .up p,
+.bottom .b2 .one .up p {
+  color: var(--DesaturatedBlue-Text);
+}
+.bottom .b1 .one .down,
+.bottom .b2 .one .down {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+.bottom .b1 .one .down h4,
+.bottom .b2 .one .down h4 {
+  color: var(--White-Text);
+  font-size: 2rem;
+}
+.bottom .b1 .one .down div,
+.bottom .b2 .one .down div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: var(--LimeGreen);
+}
+.bottom .b1 .one .down div .b3,
+.bottom .b2 .one .down div .b3 {
+  color: var(--BrightRed);
+}
+.attribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--DesaturatedBlue-Text);
+  padding-top: 10px;
+}
+.attribution a {
+  color: var(--LimeGreen);
+}
+@media screen and (max-width: 375px) {
+  .top {
     gap: 10px;
-}
-.top > .left h1{
-    color: var(--White-Text);
-}
-.top > .left p{
-    color: var(--DesaturatedBlue-Text);
-}
-.top .right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-.top .right p{
-    color: var(--DesaturatedBlue-Text);
-}
-.center{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:2rem;
-    padding-top: 1rem;
-}
-.center .one{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background-color: var(--DarkDesaturatedBlue-CardBG);
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-}
-.center .one .section1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
-}
-.center .one .section1 p{
-    color: var(--DesaturatedBlue-Text);
-}
-.center .one .section2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.center .one .section2 h3{
-    color: var(--White-Text);
-    font-size: 4rem;
-    font-weight: 700;
-}
-.center .one .section2 p{
-    color: var(--DesaturatedBlue-Text);
-    font-size: 14px;
-}
-.center .one .section3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1rem;
-    font-size: 14px;
-    color: var(--LimeGreen);
-}
-.center .one .diff p{
-    color: var(--BrightRed);
-}
-.center .one:first-child{
-    border-top: 3px solid hsl(203, 89%, 53%);
-    border-radius: 2px;
-}
-.center .two{
-    border-top: 3px solid hsl(203, 89%, 53%);
-    border-radius: 2px;
-}
-.center .three{
-    border-top: 3px solid linear-gradient(90deg,hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
-    border-radius: 2px;
-}
-.center .one:last-child{
-    border-top: 3px solid var(--BrightRed);
-    border-radius: 2px;
-}
-h1{
-    color: var(--White-Text);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.bottom{
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    gap:0.5rem;
-}
-.bottom .b1, .bottom .b2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-.bottom .b1 .one, .bottom .b2 .one{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background-color: var(--DarkDesaturatedBlue-CardBG);
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-}
-.bottom .b1 .one .up, .bottom .b2 .one .up{
+  }
+  .top .left h1 {
+    font-size: 28px;
+  }
+  .top .right {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
+  }
+  .h1 {
+    font-size: 28px;
+  }
+  .attribution {
+    flex-direction: column;
+  }
 }
-.bottom .b1 .one .up p, .bottom .b2 .one .up p{
-    color: var(--DesaturatedBlue-Text);
-} 
-.bottom .b1 .one .down, .bottom .b2 .one .down{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10px;
-}
-.bottom .b1 .one .down h4, .bottom .b2 .one .down h4{
-    color: var(--White-Text);
-    font-size: 2rem;
-}
-.bottom .b1 .one .down div, .bottom .b2 .one .down div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap:10px;
-    color:var(--LimeGreen)
-}
-.bottom .b1 .one .down div .b3, .bottom .b2 .one .down div .b3{
-    color: var(--BrightRed);
-}
-.attribution{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: var(--DesaturatedBlue-Text);
-    padding-top: 10px;
-}
-.attribution a{
-    color: var(--LimeGreen);
-}
-@media screen and (max-width:375px) {
-    .top{
-        gap: 10px;
-    }
-    .top .left h1{
-        font-size: 28px;
-    }
-    .top .right{
-        width: 100%;
-    }
-    .h1{
-        font-size: 28px;
-    }
-}
-
